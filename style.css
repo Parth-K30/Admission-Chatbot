@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,500;1,600&display=swap');
+
+:root {
+    --white: #ffffffc8;
+    --black: #07313b;
+    --blue: #4991af;
+    --dblue: #15485a;
+    --border: .2rem solid rgba(0, 0, 0, .1);
+    --light: #bfbfbbb2;
+    --lightblue: #9ddbf6c5;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none !important;
+    text-transform: capitalize;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6.5rem;
+}
+
+*::-webkit-scrollbar {
+    height: .5rem;
+    width: 1rem;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--dblue);
+}
+
+
+/* Navbar CSS starts here */
+
+.navbar {
+    padding: 2rem;
+    border-bottom: var(--border);
+    /* background-color: var(--blue); */
+}
+
+.navbar.active {
+    background-color: var(--white);
+}
+
+.navbar .navbar-brand {
+    font-size: 2rem;
+    color: var(--dblue);
+    font-weight: 500;
+}
+
+.navbar .navbar-brand span {
+    color: var(--black)
+}
+
+.nav-item a {
+    color: black;
+    font-size: 1.6rem;
+}
+
+.nav-item a:hover {
+    color: var(--light);
+}
+
+.bx {
+    font-size: 2rem;
+    border: none;
+}
+
+.btn-default {
+    font-size: 1.7rem;
+    /* background-color: var(--blue); */
+    color: black;
+    border: 1px solid #4b768937;
+    border-radius: 0.7rem;
+    padding: 0.4rem;
+}
+
+.btn-default:hover {
+    background-color: #2f87a538;
+    color: var(--black);
+    border: 1px solid var(--blue);
+    border-radius: 0.7rem;
+}
+
+/* Home Section Starts Here */
+section {
+    padding: 7rem 2rem;
+}
+
+.home {
+    background: url("dentist1.jpg") no-repeat;
+    background-size: cover;
+}
+
+.home .content {
+    width: 50rem;
+
+}
+
+.home .content p {
+    line-height: 2;
+    font-size: 1.5rem;
+    color: var(--blue);
+}
+
+.home .content h3 {
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+.about .row {
+    min-height: 50vh;
+}
+
+.about .content span {
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.about .content h3 {
+    font-size: 3rem;
+    color: var(--dblue);
+    margin-top: 1rem;
+}
+
+.about .content p {
+    padding: 1rem 0;
+    line-height: 2;
+    font-size: 1.5rem;
+    color: #112e38
+}
+
+/* Sevices CSS STARTS HERE */
+.heading {
+    text-align: center;
+    font-size: 4rem;
+    color: var(--black);
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-bottom: 3rem;
+}
+
+.box img {
+    height: 4rem;
+}
+
+.services .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+}
+
+.services .box-container .box {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--white);
+
+}
+
+
+.services {
+    background-color: var(--light);
+}
+
+/* Our Specialities */
+
+.process .heading {
+    text-align: center;
+    font-size: 4rem;
+    color: var(--black);
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-bottom: 3rem;
+}
+
+.process .box img {
+    height: 17rem;
+}
+
+.process .box-container {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--white);
+}
+
+.process .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 3rem;
+}
+
+.process .box-container .box {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--blue);
+
+}
+
+.process h3 {
+    padding: 1rem;
+}
+
+.process p {
+    line-height: 2rem;
+}
+
+/* Contact CSS starts here */
+.contact {
+    background-color: var(--light);
+}
+
+.contact form {
+    border-radius: .5rem;
+    background-color: var(--dblue);
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 50rem;
+    text-transform: none;
+}
+
+.contact form .message{
+    margin-bottom: 2rem;
+    border-radius: 0.5rem;
+    background-color: var(--blue);
+    padding: 1.5rem 1rem;
+    font-size: 1.7rem;
+    color: var(--white);
+}
+
+.contact form .box {
+    width: 100%;
+    display: inline;
+    margin: 2rem 0;
+    border-radius: .5rem;
+    background-color: white;
+    padding: 1.2rem 1.4rem;
+    font-size: 1.7rem;
+
+    text-transform: none;
+}
+
+.contact span {
+    font-size: 1.6rem;
+    color: var(--white);
+}
+
+
+
+
+@media(max-width:450px) {
+    html {
+        font-size: 50%;
+    }
+
+    .home .content h3 {
+        font-size: 4rem;
+    }
+
+    .heading {
+        font-size: 3rem;
+    }
+}
+
+@media(max-width:768px) {
+    section {
+        padding: 3rem 1rem;
+    }
+}
